@@ -134,7 +134,7 @@ function takecommand(message) {
     } else if (message.includes("can you drive")) {
         speak('No, but I can assist you with directions if needed.');
     
-}    } else if (message.includes("do you have a family")) {
+   } else if (message.includes("do you have a family")) {
         speak('I don’t have a family, but I am part of the digital family of assistants.');
     } else if (message.includes("can you cook")) {
         speak('I can’t cook, but I can help you find great recipes online!');
