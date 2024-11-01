@@ -1,6 +1,6 @@
 let btn = document.querySelector("#btn");
 let content = document.querySelector("#content");
-let voice = document.querySelector('#voice');
+let voice = document.querySelector('#voice'); // This should be your recording GIF element
 
 function speak(text) {
     // Stop recognition to prevent it from listening to the assistant's speech
@@ -20,6 +20,7 @@ function speak(text) {
         if (!isRecognitionActive) {
             recognition.start();
             isRecognitionActive = true;
+            voice.style.display = "block"; // Show recording GIF when restarting
         }
     };
 
@@ -58,8 +59,8 @@ recognition.onresult = (event) => {
 recognition.onend = () => {
     console.log("Recognition ended.");
     isRecognitionActive = false;
-    btn.style.display = "flex";
-    voice.style.display = "none";
+    btn.style.display = "flex"; // Show button again
+    voice.style.display = "none"; // Hide recording GIF
 };
 
 recognition.onerror = (error) => {
@@ -70,20 +71,19 @@ recognition.onerror = (error) => {
     }
 };
 
-
 btn.addEventListener('click', () => {
     if (!isRecognitionActive) {
         recognition.start();
         isRecognitionActive = true;
-        btn.style.display = "none";
-        voice.style.display = "block";
+        btn.style.display = "none"; // Hide button
+        voice.style.display = "block"; // Show recording GIF
         console.log("Recognition started.");
     }
 });
 
 function takecommand(message) {
-    btn.style.display = "flex";
-    voice.style.display = "none";
+    btn.style.display = "flex"; // Show button again
+    voice.style.display = "none"; // Hide recording GIF
 
     if (message.includes('hey') || message.includes('hello')) {
         wishme();
@@ -134,6 +134,5 @@ function takecommand(message) {
         speak('I can’t check the weather directly, but you can try asking Google for the latest update.');
     } else if (message.includes("can you drive")) {
         speak('No, but I can assist you with directions if needed.');
-    
-}
+    }
 }
