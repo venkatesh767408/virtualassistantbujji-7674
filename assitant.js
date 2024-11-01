@@ -134,6 +134,5 @@ function takecommand(message) {
         speak('I can’t check the weather directly, but you can try asking Google for the latest update.');
     } else if (message.includes("can you drive")) {
         speak('No, but I can assist you with directions if needed.');
-    }else if(message.includes("thanks")){
-        speak('your welcome sir");
+    }
 }
