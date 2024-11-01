@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    overflow: hidden;
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
+h1 {
+    color: rgb(255, 0, 195);
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#name {
+    font-size: 50px;
+    color: rgba(226, 246, 7, 0.9);
+}
+
+#va {
+    color: rgb(247, 0, 255);
+}
+
+#voice {
+    margin-bottom: 20px; 
+    height: 140px; 
+    width:600px; 
+    color: white;
+    text-align: center;
+    display: none;
+}
+#btn{
+     width:30%;
+     background: linear-gradient(hsla(350, 100%, 88%, 0.715),rgba(255, 192, 203, 0.769),rgba(255, 192, 203, 0.792));
+     padding:10px;
+     display:flex;
+     align-items: center;
+     justify-content:center;
+     gap:10px;
+     font-size: 20px;
+     border-radius:20px;
+     color:rgb(20, 3, 3);
+     box-shadow: 2px 2px 10px rgba(255, 192, 203, 0.333);
+     border: none;
+}
+#btn:hover{
+    word-spacing: 3px;
+    box-shadow: 2px 2px 10px rgba(255, 192, 203, 0.934);
+    cursor:pointer;
+}
