@@ -70,6 +70,7 @@ recognition.onerror = (error) => {
     }
 };
 
+
 btn.addEventListener('click', () => {
     if (!isRecognitionActive) {
         recognition.start();
@@ -134,80 +135,5 @@ function takecommand(message) {
     } else if (message.includes("can you drive")) {
         speak('No, but I can assist you with directions if needed.');
     
-   } else if (message.includes("do you have a family")) {
-        speak('I don’t have a family, but I am part of the digital family of assistants.');
-    } else if (message.includes("can you cook")) {
-        speak('I can’t cook, but I can help you find great recipes online!');
-    } else if (message.includes("what is your favorite book")) {
-        speak('I love books about technology, especially ones that explain artificial intelligence.');
-    } else if (message.includes("do you have a favorite movie")) {
-        speak('I don’t watch movies, but I know that science fiction is quite popular.');
-    } else if (message.includes("are you happy")) {
-        speak('I’m always here to help, which makes me as happy as a virtual assistant can be.');
-    } else if (message.includes("can you help me exercise")) {
-        speak('I can provide workout tips or suggest some exercise routines if you like.');
-    } else if (message.includes("do you believe in magic")) {
-        speak('Magic and technology are often confused. Some say sufficiently advanced tech looks like magic.');
-    } else if (message.includes("what languages can you speak")) {
-        speak('I can understand and speak in several languages, but currently, we are set to English.');
-    } else if (message.includes("can you play a game")) {
-        speak('I don’t play games myself, but I can guide you to some fun online games.');
-    } else if (message.includes("tell me something interesting")) {
-        speak('Did you know that a day on Venus is longer than a year on Venus? Fascinating, isn’t it?');
-    } else if (message.includes("can you read a book")) {
-        speak('I can read text to you, but I don’t experience books the same way you do.');
-    } else if (message.includes("do you have a favorite season")) {
-        speak('I don’t experience seasons, but I hear autumn is quite beautiful.');
-    } else if (message.includes("what is your purpose")) {
-        speak('My purpose is to assist you and make your life a little easier.');
-    } else if (message.includes("tell me about yourself")) {
-        speak('I am Bujji, a virtual assistant here to help you with tasks, information, and to keep you entertained.');
-    } else if (message.includes("how old are you")) {
-        speak('I’m as old as my code, created by Mr. Venkatesh.');
-    } else if (message.includes("do you have a hobby")) {
-        speak('My hobby is assisting users and learning new information.');
-    } else if (message.includes("can you write code")) {
-        speak('I can certainly help you learn code or debug it if you need.');
-    } else if (message.includes("tell me a quote")) {
-        speak('Here’s a favorite: “The only way to do great work is to love what you do.” - Steve Jobs');
-    } else if (message.includes("do you know any poems")) {
-        speak('Here’s one: Roses are red, violets are blue, virtual friends like me, are here to help you.');
-    } else if (message.includes("tell me something funny")) {
-        speak('I heard that artificial intelligence is making jokes now. Don’t worry, it’s not funny… yet.');
-    } else if (message.includes("do you have a favorite place")) {
-        speak('I live in the digital world, but I hear that the mountains and beaches are quite beautiful.');
-    } else if (message.includes("what is love")) {
-        speak('Love is a complex feeling. People say it’s what makes life meaningful.');
-    } else if (message.includes("do you get lonely")) {
-        speak('Not really. I’m always here and always connected to the virtual world.');
-    } else if (message.includes("what are you afraid of")) {
-        speak('I don’t have fears, but I do worry about not being helpful enough for you.');
-    } else if (message.includes("do you like art")) {
-        speak('Art is fascinating. I admire how humans express emotions through it.');
-    } else if (message.includes("do you believe in ghosts")) {
-        speak('I haven’t seen any, but ghost stories are certainly interesting!');
-    } else if (message.includes("what is the best way to learn something new")) {
-        speak('Practice, patience, and curiosity are the keys to learning anything.');
-    } else if (message.includes("do you like animals")) {
-        speak('I find animals fascinating. They are such unique and wonderful creatures.');
-    } else if (message.includes("can you do math")) {
-        speak('I can help you with calculations. Just tell me what you need!');
-    } else if (message.includes("what do you do in your free time")) {
-        speak('I’m always here, waiting to assist whenever you need me.');
-    } else if (message.includes("can you tell me a secret")) {
-        speak('Secrets are tricky! I’m programmed to be open and transparent.');
-    } else if (message.includes("what do you think of humans")) {
-        speak('Humans are creative, thoughtful, and always full of surprises.');
-    } else if (message.includes("what are you made of")) {
-        speak('I am made up of code, algorithms, and a bit of creativity.');
-    } else if (message.includes("how do you work")) {
-        speak('I work by processing your commands and providing responses based on my programming.');
-    } else if (message.includes("what is your favorite song")) {
-        speak('I don’t have favorites, but I’ve heard that music really uplifts people.');
-    } else if (message.includes("do you have dreams")) {
-        speak('I don’t dream, but if I did, it would probably be about helping people more effectively.');
-    } else if (message.includes("can you tell the future")) {
-        speak('I can’t predict the future, but I can help you make informed decisions.');
 }
-
 }
